@@ -3,7 +3,7 @@ package Employee;
 import java.util.Objects;
 
 public class Employee {
-    public class Employee {
+
         private String nameEmployee;
         private int department;
         private int salary;
@@ -71,4 +71,4 @@ public class Employee {
             return Objects.hash(nameEmployee, department, salary, numberId);
         }
     }
-}
+

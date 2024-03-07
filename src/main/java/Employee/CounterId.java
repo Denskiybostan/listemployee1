@@ -1,6 +1,6 @@
 package Employee;
 
-public class CointerId {
+public class CounterId {
     public static int COUNTED;
     public int id;
 

@@ -1,11 +1,11 @@
 package Service;
-import pro.sky.listemployee1.Employee.Employee;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import Employee.Employee;
+import org.springframework.util.StringUtils;
 
-public class EmployeeService {
+import java.util.*;
+
+public class EmployeeService{
     public static int numberId(int i) {
         Scanner id = new Scanner(System.in);
         System.out.println("1.Получить список всех сотрудников.\n" + "2.Посчитать сумму затрат на зарплаты в месяц.\n" + "3.Найти сотрудника с минимальной зарплатой" + "4.Найти сотрудника с максимальной зарплатой.\n" + "5.Подсчитать среднее количество зарплат.\n" + "6.Получить Ф.И.О. всех сотрудников");
@@ -67,5 +67,9 @@ public class EmployeeService {
     public List<Object> getAll() {
         return List.of();
     }
+
+
+
 }
+
 
