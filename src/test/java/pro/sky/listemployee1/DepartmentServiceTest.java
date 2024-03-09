@@ -1,9 +1,9 @@
 package pro.sky.listemployee1;
 
-import Employee.Employee;
-import Service.DepartmentService;
-import Exception.EmployeeNotFoundException;
-import Service.EmployeeService;
+import employee.Employee;
+import service.DepartmentService;
+import exception.EmployeeNotFoundException;
+import service.EmployeeService;
 import org.assertj.core.api.AbstractBigDecimalAssert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

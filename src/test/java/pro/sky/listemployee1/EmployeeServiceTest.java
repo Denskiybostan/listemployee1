@@ -1,6 +1,7 @@
 package pro.sky.listemployee1;
 
-import Service.*;
+import employee.Employee;
+import service.*;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -69,7 +70,7 @@ public class EmployeeServiceTest {
         var actual = employeeService.getAll();
         assertThat(actual).containsExactlyInAnyOrder(
                 new Employee("Aaa", "employee", 1000, 1),
-                new Employee("Bbb", "Employee", 7000, 4));
+                new Employee("Bbb", "employee", 7000, 4));
     }
 
     @Test
