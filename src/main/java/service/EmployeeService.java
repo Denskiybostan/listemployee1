@@ -21,7 +21,6 @@ public class EmployeeService {
             throw new EmployeeStorageIsFullException();
         }
 
-
         Employee employee = new Employee(StringUtils.capitalize(firstName), StringUtils.capitalize(lastName), salary, departmentId);
         var key = makeKey(firstName, lastName);
         if (employees.containsKey(key)) {
@@ -29,14 +28,15 @@ public class EmployeeService {
 
         }
 
-
-        public void removeEmployee (String firstName, String lastName){
+        public void removeEmployee (String firstName, String lastName) {
             var key = makeKey(firstName, lastName);
             var removed = employees.remove(key);
-            private static String makeKey (String firstName, String lastName){
-                return (firstName + "_" + lastName).toLowerCase();
             }
         }
+    private static String makeKey(String firstName, String lastName) {
+        return  (firstName + "_" + lastName).toLowerCase();
     }
+
+
 }
 
