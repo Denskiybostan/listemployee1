@@ -1,4 +1,4 @@
 package exception;
 
-public class EmployeeStorageIsFullException extends Exception{
+public class EmployeeStorageIsFullException extends RuntimeException{
 }

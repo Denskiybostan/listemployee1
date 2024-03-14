@@ -1,4 +1,7 @@
 package exception;
 
-public class EmployeeNotFoundException extends Exception{
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class EmployeeNotFoundException extends RuntimeException{
 }

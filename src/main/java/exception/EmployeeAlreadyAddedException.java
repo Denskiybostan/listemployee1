@@ -1,4 +1,4 @@
 package exception;
 
-public class EmployeeAlreadyAddedException extends Exception {
+public class EmployeeAlreadyAddedException extends RuntimeException {
 }

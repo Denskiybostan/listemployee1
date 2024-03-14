@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class Employee {
 
-        private String firstName;
-        private String lastName;
+        private final String firstName;
+        private final String lastName;
         private int department;
         private int salary;
         private int numberId;
